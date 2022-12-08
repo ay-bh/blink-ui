@@ -1,13 +1,13 @@
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
-import { BsCheck } from 'react-icons/bs';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+// import { BsCheck } from 'react-icons/bs';
+// import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { themeColors } from '../data/dummy';
+// import { themeColors } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const ThemeSettings = () => {
-  const { setColor, setMode, currentMode, currentColor, setThemeSettings } = useStateContext();
+  const { setMode, currentMode, setThemeSettings } = useStateContext();
 
   return (
     <div className="bg-half-transparent w-screen fixed nav-item top-0 right-0">
@@ -58,7 +58,7 @@ const ThemeSettings = () => {
             </label>
           </div>
         </div>
-        <div className="p-4 border-t-1 border-color ml-4">
+        {/* <div className="p-4 border-t-1 border-color ml-4">
           <p className="font-semibold text-xl ">Theme Colors</p>
           <div className="flex gap-3">
             {themeColors.map((item, index) => (
@@ -79,7 +79,7 @@ const ThemeSettings = () => {
               </TooltipComponent>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
